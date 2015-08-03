@@ -1,5 +1,5 @@
 # Intro to HTML/CSS
-Slides and materials are hosted at [http://roenok.github.io/gdi-core-html-css/](http://roenok.github.io/gdi-core-html-css/).
+Slides and materials are hosted at [http://gdirdu.github.io/gdi-core-html-css](http://gdirdu.github.io/gdi-core-html-css).
 
 ## Course description
 This is a 4-part, 8-hour course.
