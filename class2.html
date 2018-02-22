@@ -52,9 +52,15 @@
             <h2>Class 2</h2>
           </section>
 
+          <section>
+            <h3>Let's Review</h3>
+            <img src="img/elephants.jpg" alt="Two elephants interacting"/>
+            <p><small>Photo credit:  <a href="http://www.flickr.com/photos/ginable/325235488/">Ginable</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></small></p>
+          </section>
+
           <!-- Quiz 1-->
           <section>
-            <h3>Quiz Part 1</h3>
+            <h3>Refresher Part 1</h3>
             <p>Which tag is used to create a link to another page?</p>
             <ol>
               <li>&lt;p&gt;</li>
@@ -67,24 +73,28 @@
 
           <!-- Quiz 2-->
           <section>
-            <h3>Quiz Part 2</h3>
+            <h3>Refresher Part 2</h3>
             <p>What are the two tags that nest directly within the &lt;html&gt; tags?</p>
             <div class="fragment blue">Answer: &lt;head&gt; and &lt;body&gt;</div>
           </section>
 
           <!-- Quiz 3-->
           <section>
-            <h3>Quiz Part 3</h3>
-            <p>What is it called when you have a 'tag' + 'content' + 'closing tag'?</p>
+            <h3>Refresher Part 3</h3>
+            <p>When you have an opening tag + content + a closing tag, it's called an HTML *blank*?</p>
             <div class="fragment blue">Answer: An HTML <strong>Element</strong></div>
           </section>
 
-          <!-- Review: Role of HTML v. CSS-->
+          <!-- Quiz 4-->
           <section>
-            <h3>Let's Review</h3>
-            <img src="img/elephants.jpg" alt="Two elephants interacting"/>
-            <p><small>Photo credit:  <a href="http://www.flickr.com/photos/ginable/325235488/">Ginable</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></small></p>
+            <h3>Refresher Part 4</h3>
+            <p>In the HTML below, <code>class</code> and <code>id</code> are called the *blanks* of the HTML element</p>
+<pre><code class = "html">&lt;p &#x0063;lass="paragraph" id="paragraphOne" &gt;Dogs are cool, too&lt;/p&gt;
+</code></pre>
+            <div class="fragment blue">Answer: The <strong>attributes</strong> of the HTML element</div>
           </section>
+
+          <!-- Review: Role of HTML v. CSS-->
 
           <section>
             <h3>Anatomy of a website</h3>
@@ -114,11 +124,7 @@
             <img src = "img/homepage-css.png" alt="Screenshot of CSS">
           </section>
 
-          <!-- The CSS Rule-->
-          <section>
-            <h3>The CSS Rule</h3>
-            <img src="img/cssrule.png" alt="The CSS Rule" style="border: none; box-shadow: none;"/>
-          </section>
+
           <section>
             <h3>The CSS Rule</h3>
 <pre><code class = "css">selector {
@@ -131,6 +137,12 @@
               <li>It has sets of properties and values.</li>
               <li>A property-value pair is a declaration.</li>
             </ul>
+          </section>
+
+          <!-- The CSS Rule-->
+          <section>
+            <h3>The CSS Rule</h3>
+            <img src="img/cssrule.png" alt="The CSS Rule" style="border: none; box-shadow: none;"/>
           </section>
 
           <!-- Connecting HTML to CSS-->
@@ -149,14 +161,14 @@
 </code></pre>
             <p>Uses the HTML attribute style.</p>
             <p>Difficult to use in large projects</p>
-            <p>Not preferred.</p>
+            <p>Not preferred (unless you are styling emails!).</p>
           </section>
 
           <!-- Embedded -->
           <section>
             <h3>Connecting CSS to HTML: Embedded</h3>
 <pre><code class = "html">&lt;head&gt;
-  &lt;style type="text/css"&gt;
+  &lt;style&gt;
     p {
       color: blue;
       font-size: 12px;
@@ -182,6 +194,7 @@
               <li>Easy to maintain in larger projects.</li>
               <li>Preferred by nerds everywhere!</li>
             </ul>
+            <img src="https://media.giphy.com/media/UlEBHvopmjvP2/giphy.gif" />
           </section>
 
           <!-- Exercise-->
@@ -237,24 +250,9 @@
               <li><strong>HSL value</strong> (ex. hsl(0, 100%, 100%))</li>
             </ul>
             <p>
-              The 17 standard colors are:
-              <span style="color:aqua; background:black;">aqua</span>,
-              <span style="color:black,">black</span>,
-              <span style="color:blue;">blue</span>,
-              <span style="color:fuchsia;">fuchsia</span>,
-              <span style="color:gray;">gray</span>,
-              <span style="color:grey;">grey</span>,
-              <span style="color:green;">green</span>,
-              <span style="color:lime;">lime</span>,
-              <span style="color:maroon;">maroon</span>,
-              <span style="color:navy;">navy</span>,
-              <span style="color:olive;">olive</span>,
-              <span style="color:purple;">purple</span>,
-              <span style="color:red;">red</span>,
-              <span style="color:silver; background:black;">silver</span>,
-              <span style="color:teal;">teal</span>,
-              <span style="color:white; background:black;">white</span>,
-              and <span style="color:yellow; background:black;">yellow</span>.
+              <a href="http://www.colors.commutercreative.com/grid/" target="_blank">List of color names</a>
+              <br />
+              <a href="https://en.wikipedia.org/wiki/Web_colors" target="_blank">Web colors on Wikipedia</a>
             </p>
           </section>
           <section>
@@ -266,6 +264,13 @@
   color: rgb(255, 0, 0);
 }
 </code></pre>
+            <p>
+              <span style="color:red;">color: red</span>
+              <br/>
+              <span style="color:#ff0000;">color: #ff0000</span>
+              <br/>
+              <span style="color:rgb(255, 0, 0);">color: rgb(255, 0, 0)</span>
+            </p>
           </section>
 
           <!-- Background color-->
@@ -288,18 +293,6 @@
               <li>Change the font color and background color of different types of elements</li>
               <li>Try selecting links, paragraphs, and lists</li>
             </ul>
-          </section>
-
-          <!-- Multiple values -->
-          <section>
-          <h3>Property Values</h3>
-          <p>Each property can have one or more comma separated values.</p>
-<pre><code class = "css">p{
-  color: white;
-  background-color: red;
-  font-family: Arial, sans-serif;
-}
-</code></pre>
           </section>
 
           <!-- Fonts-->
@@ -362,13 +355,13 @@
           <section>
             <h3>Selector: Position</h3>
 <pre><code class = "css">p em {
-  color: yellow;
+  color: cornflowerblue;
 }
 </code></pre>
             <p>Selects all em elements that are within a paragraph</p>
 <pre><code class = "html">&lt;p&gt;This is &lt;em&gt;important.&lt;/em&gt;&lt;/p&gt;
 </code></pre>
-            <p>The associated HTML.</p>
+          <p>This is <em style="color:cornflowerblue">important.</em></p>
           </section>
           <section>
             <h3>Selector: Position</h3>
@@ -390,6 +383,9 @@
   &lt;li&gt;&lt;a href="programs.html"&gt;Our &lt;strong&gt;program&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
+          <ul>
+            <li><a href="#">Our <strong style="color:purple;">program</strong></a></li>
+          </ul>
           </section>
           <section>
             <h3>Let's develop it</h3>
@@ -402,10 +398,11 @@
           <!-- IDs and Classes-->
           <section>
             <h3>Reusing code</h3>
-            <p>As a general coding principle, <strong>D</strong>on't <strong>R</strong>epeat <strong>Y</strong>ourself.
+            <p>
+              As a general coding principle, <strong>D</strong>on't <strong>R</strong>epeat <strong>Y</strong>ourself.
+              <img src="http://messybeast.com/images/clonecat.jpg" />
+            </p>
             <p>To reuse CSS, we use IDs and classes.</p>
-            <img src="img/recycle.jpg" alt="Recycle symbol"/>
-            <p><small>Photo credit:  <a href="http://www.flickr.com/photos/yomostro/2502577270/">Yo Mostro</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></small></p>
           </section>
           <section>
             <h3>IDs vs. Classes</h3>
@@ -417,7 +414,7 @@
           <section>
             <h3>Selector: ID</h3>
 <pre><code class = "css">#footer {
-  property: value;
+  font-style: italic;
 }
 </code></pre>
             <p>Selects all elements with an id of "footer".</p>
@@ -425,6 +422,8 @@
 <pre><code class="html">&lt;p id="footer"&gt;Copyright 2011&lt;/p&gt;
 </code></pre>
             <p>The associated HTML.</p>
+            <p style="font-style:italic;">Copyright 2011</p>
+            <p>The result!</p>
           </section>
 
           <!-- Selectors Class-->
@@ -439,6 +438,8 @@
 <pre><code class = "html">&lt;p class="warning"&gt;Run away!&lt;/p&gt;
 </code></pre>
             <p>The associated HTML.</p>
+            <p style="color:red;">Run away!</p>
+            <p>The result!</p>
           </section>
 
           <!-- Exercise-->
@@ -454,28 +455,31 @@
           <section>
             <h3>Cascading</h3>
             <p>Styles "cascade" down until changed</p>
-<pre><code class = "css">p{
+<pre><code class = "css">p {
   color:blue;
-  font-family: 'Helvetica';
+  font-size: 20px;
 }
 .red {
   color: red;
 }
 #special {
-  font-family: Arial;
+  font-family: 40px;
 }
 </code></pre>
 <pre><code class = "html">&lt;p&gt;Paragraph&lt;/p&gt;
 &lt;p class ="red"&gt;Paragraph&lt;/p&gt;
 &lt;p class = "red" id ="special"&gt;Paragraph&lt;/p&gt;
 </code></pre>
+            <p style="color:blue;font-size:20px;">Paragraph</p>
+            <p style="color:red;font-size:20px;">Paragraph</p>
+            <p style="color:blue;font-size:40px;" >Paragraph</p>
           </section>
           <section>
             <h3>Cascading priority</h3>
             <p>Your browser assigns different priorities to CSS depending on the type of selector.</p>
             <ol>
               <li>Important! - <strong>Most Important</strong></li>
-              <li>In line CSS</li>
+              <li>Inline CSS</li>
               <li>ID</li>
               <li>Class</li>
               <li>Element - <strong>Least Important</strong></li>
@@ -484,13 +488,13 @@
           <section>
             <h3>Cascading priority</h3>
             <p>Your browser also assigns priority based on the specificity of the selection. More specific selectors have higher priority.</p>
-<pre><code class = "css">.main .sale .clearance p{ //Most specific
+<pre><code class = "css">.main .sale .clearance p { // Most specific
   color: red;
 }
-.header .title p{
+.header .title p {
   color: green;
 }
-.footer p{ //Least specific
+.footer p { // Least specific
   color: blue;
 }
 </code></pre>
@@ -498,13 +502,13 @@
           <section>
             <h3>Cascading priority</h3>
             <p>The tie-breaker is position. Rules lower in the file overwrite rules higher in the file</p>
-<pre><code class = "css">a{
+<pre><code class = "css">a {
   background-color: yellow;
 }
-a{
+a {
   background-color: teal;
 }
-a{ //This rule wins
+a { // This rule wins
   background-color: black;
 }
 </code></pre>
