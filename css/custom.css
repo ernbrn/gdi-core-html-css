@@ -60,3 +60,11 @@ div.left-align{
     position: static;
     width: auto;
 }
+
+a:link.pseudo-example {
+    text-decoration: line-through;
+}
+
+a:visited.pseudo-example {
+    text-decoration: none;
+}

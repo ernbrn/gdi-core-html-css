@@ -52,10 +52,51 @@
           <h1>Intro to HTML/CSS</h1>
           <h2>Class 3</h2>
         </section>
+          <section>
+            <h3>Refresher Part 1</h3>
+            <p>In CSS, how would we write the class selector for this HTML element?</p>
+
+<pre><code class = "html">&lt;p c&zwnj;lass ="red"&gt;Some red text&lt;/p&gt;
+</code></pre>
+            <ol>
+              <li>a: <code>#red</code></li>
+              <li>b: <code>.red</code></li>
+              <li>c: <code>p</code></li>
+            </ol>
+            <div class="fragment blue">
+              Answer: <code>.red</code>
+            </div>
+          </section>
+
+          <section>
+            <h3>Refresher Part 2</h3>
+            <p>In CSS, how would we write the id selector for this HTML element?</p>
+
+<pre><code class = "html">&lt;p id="first-paragraph"&gt;Some red text&lt;/p&gt;
+</code></pre>
+            <ol>
+              <li>a: <code>.this-paragraph</code></li>
+              <li>b: <code>@this-paragraph</code></li>
+              <li>c: <code>#this-paragraph</code></li>
+            </ol>
+            <div class="fragment blue">Answer: <code>#this-paragraph</code></div>
+          </section>
+
+          <section>
+            <h3>Refresher Part 3</h3>
+            <p>Which statement is true?</p>
+
+            <ol>
+              <li>a: The same class can be used on multiple elements. The same id should be used on multiple elements.</li>
+              <li>b: A class should only be used on 1 element. An id should be used on 1 element.</li>
+              <li>c: The same class can be used on multiple elements. An id should only be used on 1 element.</li>
+            </ol>
+            <div class="fragment blue">Answer: The same class can be used on multiple elements. An id should only be used on 1 element.</div>
+          </section>
 
           <!-- Cascading-->
           <section>
-            <h3>Cascading</h3>
+            <h3>The "Cascading" of Cascading Style Sheets</h3>
             <p>Styles "cascade" down until changed</p>
 <pre><code class = "css">p {
   color:blue;
@@ -69,12 +110,18 @@
 }
 </code></pre>
 <pre><code class = "html">&lt;p&gt;Paragraph&lt;/p&gt;
-&lt;p class ="red"&gt;Paragraph&lt;/p&gt;
-&lt;p class = "red" id ="special"&gt;Paragraph&lt;/p&gt;
+&lt;p c&zwnj;lass ="red"&gt;Paragraph&lt;/p&gt;
+&lt;p c&zwnj;lass = "red" id ="special"&gt;Paragraph&lt;/p&gt;
 </code></pre>
-            <p style="color:blue;font-size:20px;">Paragraph</p>
-            <p style="color:red;font-size:20px;">Paragraph</p>
-            <p style="color:blue;font-size:40px;" >Paragraph</p>
+            <div class="fragment">
+              <p style="color:blue;font-size:20px;">Paragraph</p>
+            </div>
+            <div class="fragment">
+              <p style="color:red;font-size:20px;">Paragraph</p>
+            </div>
+            <div class="fragment">
+              <p style="color:blue;font-size:40px;" >Paragraph</p>
+            </div>
           </section>
           <section>
             <h3>Cascading priority</h3>
@@ -130,6 +177,10 @@ a { // This rule wins
             </ul>
             <p><a href = "https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
           </section>
+          <section>
+            <h3>Block and Inline Elements!</h3>
+            <img src="https://media.giphy.com/media/yXoyOGBXgczsI/giphy.gif" />
+          </section>
 
         <!-- Inline vs. block-->
         <section>
@@ -149,8 +200,8 @@ a { // This rule wins
           <ul>
             <li>CSS divides HTML into two types: inline and block.</li>
             <li>After block elements, browsers render a new line.</li>
-            <li><strong>Inline elements:</strong> img, a, br, em, strong</li>
-            <li><strong>Block elements:</strong> p, h1, ul, li, almost everything else</li>
+            <li><strong>Inline elements that we've used:</strong> <code>img</code>, <code>a</code>, <code>em</code>, <code>strong</code> </li>
+            <li><strong>Block elements that we've used:</strong> <code>p</code>, <code>h1</code>, <code>ul</code>, <code>li</code>, and almost everything else</li>
           </ul>
         </section>
 
@@ -175,7 +226,7 @@ a { // This rule wins
    &lt;h1&gt;Main Heading&lt;h1&gt;
 &lt;/div&gt;
 </code></pre>
-<pre><code class="html">&lt;div class="sub-content"&gt;
+<pre><code class="html">&lt;div c&zwnj;lass="sub-content"&gt;
    &lt;p&gt;Some more content&lt;p&gt;
 &lt;/div&gt;
 </code></pre>
@@ -191,16 +242,17 @@ a { // This rule wins
 
         <section>
           <h3>Grouping elements with div, cont.</h3>
-<pre><code class="css">.align-right{
-  text-align:right;
+<pre><code class="css">.align-right {
+  text-align: right;
   color: purple;
   font-weight: bold;
 }
 </code></pre>
-<pre><code class="html">&lt;div class="align-right"&gt;
+<pre><code class="html">&lt;div c&zwnj;lass="align-right"&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p&gt;
   &lt;p&gt;Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p&gt;
 &lt;/div&gt;
+
 &lt;p&gt;Magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
 &lt;p&gt;Quis nostrud exercitation ullamco.&lt;/p&gt;
 </code></pre>
@@ -238,7 +290,7 @@ a { // This rule wins
         <section>
           <h3>Sample Code</h3>
            <p>A page divided into divs might look like this:</p>
-<pre><code class="html">&lt;!doctype html&gt;
+<pre><code class="html" style="max-height:100%;">&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Sample Page&lt;/title&gt;
@@ -264,7 +316,7 @@ a { // This rule wins
         <section>
           <h3>Sample Code: HTML5</h3>
            <p>A page divided using HTML 5 elements might look like this:</p>
-<pre><code class="html">&lt;!doctype html&gt;
+<pre><code class="html" style="max-height:100%;">&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Sample Page&lt;/title&gt;
@@ -300,11 +352,11 @@ a { // This rule wins
           <h3>Span</h3>
           <p>Span is used to apply a specific style inline</p>
 
-<pre><code class="css">.highlight{
-  color:teal;
+<pre><code class="css">.highlight {
+  color: teal;
 }
 </code></pre>
-<pre><code class="html">&lt;p&gt;Paragraph with &lt;span class="highlight"&gt;teal&lt;/span&gt; text.&lt;/p&gt;
+<pre><code class="html">&lt;p&gt;Paragraph with &lt;span c&zwnj;lass="highlight"&gt;teal&lt;/span&gt; text.&lt;/p&gt;
 </code></pre>
           <p>Paragraph with <span style="color:teal;">teal</span> text.</p>
         </section>
@@ -318,21 +370,23 @@ a { // This rule wins
         <section>
           <h3>Pseudo-classess</h3>
           <div class="halfblock">
-            <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
+            <p>Changing the style of a link when you hover over it is accomplished by using pseudo-classes.</p>
             <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
           </div>
 
           <div class="halfblock">
             <p>Syntax:</p>
-<pre><code class="css">selector:pseudo-class{
-  property:value;
+<pre><code class="css">selector:pseudo-class {
+  property: value;
 }
 </code></pre>
             <p>Example:</p>
 <pre><code class="css">a:link{
-  text-decoration: none;
+  text-decoration: line-through;
 }
 </code></pre>
+Will select all unvisited <code>&lt;a&gt;</code> tags and put a line through them.
+            <a href="#" class="pseudo-example">Like this!</a>
           </div>
         </section>
 
@@ -357,12 +411,17 @@ a:active {color:#0000FF;} /* selected link */
         <!-- Box model-->
         <section>
           <h3>The Box Model</h3>
-          <img src="img/boxpadding.jpg" alt="Small box surrounded by packing peanuts in a larger box"/>
-          <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/dchallender/76537016/">dchallender</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+          <img src="https://media.giphy.com/media/HgebZbQ0Lc1Ne/giphy.gif" />
         </section>
         <section>
           <h3>Box Model</h3>
           <img src="img/box-model.png" alt="Graphic illustrating box model"/>
+          <div style="font-style:italic;">
+              <span>"The CSS box model is the foundation of layout on the Web — each element is
+              represented as a rectangular box, with the box's content, padding, border,
+              and margin built up around one another like the layers of an onion."</span>
+              - MDN web docs
+          </div>
         </section>
 
         <!-- Padding -->
@@ -418,7 +477,7 @@ a:active {color:#0000FF;} /* selected link */
 <pre><code class="css">border: 1px solid #ff0000;</code></pre>
           <p>A thick dotted black top border</p>
 <pre><code class="css">border-top: 4px dotted #000000;</code></pre>
-          <p>Two diﬀerent border styles</p>
+          <p>Two different border styles</p>
 <pre><code class="css">border-top: 1px solid #ff0000;
 border-bottom: 4px dotted #000000;
 </code></pre>
@@ -450,7 +509,7 @@ border-color: #666666;
 <pre><code class="css">margin-top: 10px;</code></pre>
         </section>
 
-        <section>
+        <!-- <section>
           <h3>Auto Margin</h3>
           <p>If a margin is set to auto on a box that has width, it will take up as much space as possible.</p>
           <p>CENTERED</p>
@@ -462,9 +521,9 @@ width: 300px;
 margin-right: 5px;
 width: 300px;
 </code></pre>
-        </section>
+        </section> -->
 
-        <section>
+        <!-- <section>
           <h3>Wrappers</h3>
           <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
 <pre><code class="css">div.wrapper{
@@ -473,13 +532,12 @@ width: 300px;
   margin: 0 auto;
 }
 </code></pre>
-        </section>
+        </section> -->
 
         <!-- Exercise -->
         <section>
           <h3>Let's Develop it!</h3>
           <p>Let's add some padding, borders, and margins to our divs.</p>
-          <p>Let's center our entire document in the browser.</p>
         </section>
 
         <!-- Sizing -->
