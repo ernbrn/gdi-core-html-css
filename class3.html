@@ -53,41 +53,83 @@
           <h2>Class 3</h2>
         </section>
 
-        <!-- Quiz 1-->
-        <section>
-          <h3>Quiz Part 1</h3>
-          <p>Within your &lt;html&gt;&lt;/html&gt; tags, which are the two nested tags required for a website?</p>
-          <div class="fragment">
-<pre><code class="html xml">&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+          <!-- Cascading-->
+          <section>
+            <h3>Cascading</h3>
+            <p>Styles "cascade" down until changed</p>
+<pre><code class = "css">p {
+  color:blue;
+  font-size: 20px;
+}
+.red {
+  color: red;
+}
+#special {
+  font-family: 40px;
+}
 </code></pre>
-
-      </div>
-        </section>
-
-        <!-- Quiz 2-->
-        <section>
-          <h3>Quiz Part 2</h3>
-          <p class="fragment visible">What does a complete paragraph element look like?</p>
-          <div class="fragment">
-<pre><code class="html xml">&lt;p&gt;This is a paragraph&lt;/p&gt;
+<pre><code class = "html">&lt;p&gt;Paragraph&lt;/p&gt;
+&lt;p class ="red"&gt;Paragraph&lt;/p&gt;
+&lt;p class = "red" id ="special"&gt;Paragraph&lt;/p&gt;
 </code></pre>
-          </div>
-        </section>
-
-        <!-- Quiz 3-->
-        <section>
-          <h3>Quiz Part 3</h3>
-          <p class="fragment">What does a complete link (anchor) element look like?  Hint: needs an 'href'.</p>
-          <div class="fragment">
-<pre><code class="html xml">&lt;a href="http://google.com/"&gt;This goes to google&lt;/a&gt;
+            <p style="color:blue;font-size:20px;">Paragraph</p>
+            <p style="color:red;font-size:20px;">Paragraph</p>
+            <p style="color:blue;font-size:40px;" >Paragraph</p>
+          </section>
+          <section>
+            <h3>Cascading priority</h3>
+            <p>Your browser assigns different priorities to CSS depending on the type of selector.</p>
+            <ol>
+              <li>Important! - <strong>Most Important</strong></li>
+              <li>Inline CSS</li>
+              <li>ID</li>
+              <li>Class</li>
+              <li>Element - <strong>Least Important</strong></li>
+            </ol>
+          </section>
+          <section>
+            <h3>Cascading priority</h3>
+            <p>Your browser also assigns priority based on the specificity of the selection. More specific selectors have higher priority.</p>
+<pre><code class = "css">.main .sale .clearance p { // Most specific
+  color: red;
+}
+.header .title p {
+  color: green;
+}
+.footer p { // Least specific
+  color: blue;
+}
 </code></pre>
-          </div>
-        </section>
+          </section>
+          <section>
+            <h3>Cascading priority</h3>
+            <p>The tie-breaker is position. Rules lower in the file overwrite rules higher in the file</p>
+<pre><code class = "css">a {
+  background-color: yellow;
+}
+a {
+  background-color: teal;
+}
+a { // This rule wins
+  background-color: black;
+}
+</code></pre>
+          </section>
+
+          <!-- Properties-->
+          <section>
+            <h3>CSS Properties</h3>
+            <p>Many CSS properties have self-explanatory names:</p>
+            <ul>
+              <li>background-color</li>
+              <li>font-family</li>
+              <li>font-size</li>
+              <li>color</li>
+              <li>width</li>
+              <li>height</li>
+            </ul>
+            <p><a href = "https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
+          </section>
 
         <!-- Inline vs. block-->
         <section>
